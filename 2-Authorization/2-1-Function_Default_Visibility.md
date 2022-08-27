@@ -1,4 +1,4 @@
-#Delegatecall
+#Function Default Visibility
 
 #Summary
 
@@ -6,17 +6,23 @@ The visibility specifiers govern the method a function is called in the Solidity
 
 #How to Test
 
-The contract's initialization function in the example below designates the function's caller as its owner. The logic, however, is independent of the person who created the contract and does not remember that it has already been called.
-
 ```sol
-    function initContract() public {
-        owner = msg.sender;
-    } 
+contract Test {
+
+    function gainEther() {
+        require(uint32(msg.sender) == 0);
+        _sendEther();
+    }
+
+    function _sendEther() {
+        msg.sender.transfer(this.balance);
+    }
+}   
 ```
 
 #Remediation
 
-Be careful when using delegatecall and never call into shady contracts. Make care to cross-reference the target address with a whitelist of trusted contracts if it was obtained via user input.
+Always use consciously one of the visibility specifier `external`, `public`, `internal` or `private`.
 
 #References
 
