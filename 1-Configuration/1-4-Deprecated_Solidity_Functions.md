@@ -1,9 +1,9 @@
-#Deprecated Solidity Functions
+# Deprecated Solidity Functions
 
-#Summary
+# Summary
 
-#How to Test
+# How to Test
 
-#Remediation
+# Remediation
 
-#References
+# References

@@ -1,7 +1,9 @@
-#Titel
+# Authorization through tx-origin
 
-#Summary
+# Summary
 
-#Test Objectives
+# How to Test
 
-#How to Test
+# Remediation
+
+# References

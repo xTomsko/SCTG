@@ -1,7 +1,9 @@
-#Titel
+# Lack of Proper Signature Verification
 
-#Summary
+# Summary
 
-#Test Objectives
+# How to Test
 
-#How to Test
+# Remediation
+
+# References

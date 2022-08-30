@@ -2,7 +2,7 @@
 
 #Summary
 
-This vulnerability manifests itself in transactions that accept untrusted input data or value and is very simple to exploit. Overflow in smart contracts typically happens when the maximum value is exceeded. Since Solidity, the language used to create most of the contracts can handle up to 256-bit values, an increment of 1 would result in an overflow. 
+This vulnerability manifests itself in transactions that accept untrusted input data or value and is very simple to exploit. Overflow in smart contracts typically happens when the maximum value is exceeded. Since Solidity, the language used to create most of the contracts can handle up to 256-bit values, an increment of 1 would result in an overflow.
 
 #How to Test
 
